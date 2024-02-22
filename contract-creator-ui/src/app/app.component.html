@@ -1,0 +1,61 @@
+<mat-stepper orientation="vertical" #stepper>
+  <mat-step [stepControl]="firstFormGroup" errorMessage="Address is required.">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out property Seller</ng-template>
+      <mat-form-field>
+        <mat-label for="seller">Seller Public Key</mat-label>
+        <input id="seller" matInput placeholder="address" formControlName="seller" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required.">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill out property Buyer</ng-template>
+      <mat-form-field>
+        <mat-label for="buyer">Buyer Public Key</mat-label>
+        <input id="buyer" matInput placeholder="address" formControlName="buyer" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel>Fill out your NFT token address</ng-template>
+      <mat-form-field>
+        <mat-label for="token">NFT token Address</mat-label>
+        <input id="token" matInput formControlName="token" placeholder="address" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="forthFormGroup">
+    <form [formGroup]="forthFormGroup">
+      <ng-template matStepLabel>Fill out price for the property</ng-template>
+      <mat-form-field>
+        <mat-label for="price">Price</mat-label>
+        <input id="price" matInput type="number" formControlName="price" placeholder="price" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="send()">Send</button>
+    </div>
+  </mat-step>
+</mat-stepper>

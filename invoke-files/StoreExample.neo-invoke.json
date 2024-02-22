@@ -1,0 +1,7 @@
+[
+  {
+    "contract": "Mariusz.StoreExampleContract",
+    "operation": "getNumber",
+    "args": []
+  }
+]

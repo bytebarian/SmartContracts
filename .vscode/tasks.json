@@ -1,0 +1,578 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/StoreExample"
+      },
+      "label": "StoreExample: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/StoreExample"
+      },
+      "label": "StoreExample: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "StoreExample: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ContractsCommunicationExample"
+      },
+      "label": "ContractsCommunicationExample: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ContractsCommunicationExample"
+      },
+      "label": "ContractsCommunicationExample: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "ContractsCommunicationExample: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/First"
+      },
+      "label": "First: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/First"
+      },
+      "label": "First: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "First: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/Second"
+      },
+      "label": "Second: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/Second"
+      },
+      "label": "Second: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "Second: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ContractCall"
+      },
+      "label": "ContractCall: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ContractCall"
+      },
+      "label": "ContractCall: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "ContractCall: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/Oracle"
+      },
+      "label": "Oracle: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/Oracle"
+      },
+      "label": "Oracle: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "Oracle: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/PropertyAsset"
+      },
+      "label": "PropertyAsset: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/PropertyAsset"
+      },
+      "label": "PropertyAsset: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "PropertyAsset: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/BuyProperty"
+      },
+      "label": "BuyProperty: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/BuyProperty"
+      },
+      "label": "BuyProperty: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "BuyProperty: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/FirstToken"
+      },
+      "label": "FirstToken: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/FirstToken"
+      },
+      "label": "FirstToken: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "FirstToken: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/PropertyToken"
+      },
+      "label": "PropertyToken: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/PropertyToken"
+      },
+      "label": "PropertyToken: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "PropertyToken: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/PropertyNFT"
+      },
+      "label": "PropertyNFT: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/PropertyNFT"
+      },
+      "label": "PropertyNFT: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "PropertyNFT: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalAPICall"
+      },
+      "label": "ExternalAPICall: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalAPICall"
+      },
+      "label": "ExternalAPICall: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "ExternalAPICall: restore-tools"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: create-private-chain",
+      "command": "neoxp",
+      "type": "shell",
+      "args": [
+        "create",
+        "-f",
+        "test/ExternalCallTests.neo-express"
+      ],
+      "group": "set-private-chain",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: create-wallet-owner",
+      "command": "neoxp",
+      "type": "shell",
+      "args": [
+        "wallet",
+        "create",
+        "-i",
+        "test/ExternalCallTests.neo-express",
+        "owner"
+      ],
+      "group": "set-private-chain",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": [],
+      "dependsOn": "ExternalCall: create-private-chain"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: create-wallet-alice",
+      "command": "neoxp",
+      "type": "shell",
+      "args": [
+        "wallet",
+        "create",
+        "-i",
+        "test/ExternalCallTests.neo-express",
+        "alice"
+      ],
+      "group": "set-private-chain",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": [],
+      "dependsOn": "ExternalCall: create-wallet-owner"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: create-wallet-bob",
+      "command": "neoxp",
+      "type": "shell",
+      "args": [
+        "wallet",
+        "create",
+        "-i",
+        "test/ExternalCallTests.neo-express",
+        "bob"
+      ],
+      "group": "set-private-chain",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": [],
+      "dependsOn": "ExternalCall: create-wallet-alice"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: transfer-gas-to-wallets",
+      "command": "neoxp",
+      "type": "shell",
+      "args": [
+        "batch",
+        "-i",
+        "test/ExternalCallTests.neo-express",
+        "test/setup-test-chain.batch"
+      ],
+      "group": "set-private-chain",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": [],
+      "dependsOn": "ExternalCall: create-wallet-bob"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: build",
+      "command": "neo3-boa",
+      "type": "shell",
+      "args": [
+        "src/ExternalCall_contract.py"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": [],
+      "dependsOn": "ExternalCall: transfer-gas-to-wallets"
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: restore-tools",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "tool",
+        "restore"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    },
+    {
+      "options": {
+        "cwd": "${workspaceFolder}/contracts/ExternalCall"
+      },
+      "label": "ExternalCall: build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile",
+      "dependsOn": "ExternalCall: restore-tools"
+    }
+  ]
+}

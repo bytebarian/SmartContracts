@@ -1,0 +1,29 @@
+{
+  "name": "tom",
+  "version": "1.0",
+  "scrypt": {
+    "n": 16384,
+    "r": 8,
+    "p": 8,
+    "size": 64
+  },
+  "accounts": [
+    {
+      "address": "NQvfXNasP5GsKWvyfVDquNvu78pt3KxsnF",
+      "label": "Default account",
+      "isDefault": true,
+      "lock": false,
+      "key": "6PYVujZ1SoArtR2cVyBR2HrLuyHhvgAFUG3vSjKaYR8YtKDzvbyXCZDYTo",
+      "contract": {
+        "script": "DCEDlTSNXCHBJjZmq759CHC24UXQb9PxJHly3AaPzVmw/qRBVuezJw==",
+        "parameters": [
+          {
+            "name": "signature",
+            "type": "Signature"
+          }
+        ],
+        "deployed": false
+      }
+    }
+  ]
+}

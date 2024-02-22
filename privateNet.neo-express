@@ -1,0 +1,60 @@
+{
+  "magic": 1311208511,
+  "address-version": 53,
+  "consensus-nodes": [
+    {
+      "tcp-port": 50013,
+      "ws-port": 50014,
+      "rpc-port": 50012,
+      "wallet": {
+        "name": "node1",
+        "accounts": [
+          {
+            "private-key": "51abfa32af5685a920093377247d2f176e0308d8e2b98830c75940d6d4c3f7da",
+            "script-hash": "NgW5KymJf9PQgpNVR8aDzynGjwZRsQKZfx",
+            "label": null,
+            "is-default": true,
+            "contract": {
+              "script": "0c2103087e8c2931d11cf8cf0623d9bba0ad892ae9bd7a4816871783c8f3622e5e35be4156e7b327",
+              "parameters": [
+                "Signature"
+              ]
+            }
+          },
+          {
+            "private-key": "51abfa32af5685a920093377247d2f176e0308d8e2b98830c75940d6d4c3f7da",
+            "script-hash": "Ne9a3W29eQ2BFgaw8SkQvkwbTs6vDvpe5e",
+            "label": "Consensus MultiSigContract",
+            "is-default": false,
+            "contract": {
+              "script": "110c2103087e8c2931d11cf8cf0623d9bba0ad892ae9bd7a4816871783c8f3622e5e35be11419ed0dc3a",
+              "parameters": [
+                "Signature"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "wallets": [
+    {
+      "name": "mariusz",
+      "accounts": [
+        {
+          "private-key": "fa47d70796d6238173580ad8378e722b5e6bf0d61e7cb323eaa6b8401a2a43c5",
+          "script-hash": "NPeVh32xJpZDMWmXwAUMgGSU5HHDQvDNq8",
+          "label": null,
+          "is-default": true,
+          "contract": {
+            "script": "0c2102101bba42c831c8db8727a789c66e3af1106a848cc7f4d87018db3deb2d3338974156e7b327",
+            "parameters": [
+              "Signature"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "settings": {}
+}
