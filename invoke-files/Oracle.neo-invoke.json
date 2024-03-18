@@ -1,6 +1,0 @@
-[
-  {
-    "contract": "YourName.ExternalAPICallContract",
-    "operation": "GetNumber"
-  }
-]

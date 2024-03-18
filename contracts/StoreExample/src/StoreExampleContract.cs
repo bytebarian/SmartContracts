@@ -18,6 +18,7 @@ namespace StoreExample
     {
         const byte Prefix_NumberStorage = 0x00;
         const byte Prefix_ContractOwner = 0xFF;
+        static readonly string PreData = "RequestData";
         private static Transaction Tx => (Transaction) Runtime.ScriptContainer;
 
         [DisplayName("NumberChanged")]
@@ -70,8 +71,10 @@ namespace StoreExample
 
         public static ByteString GetNumber()
         {
-            StorageMap contractStorage = new(Storage.CurrentContext, Prefix_NumberStorage);
-            return contractStorage.Get(Tx.Sender);
+            GetDataFromExternalAPI();
+            //StorageMap contractStorage = new(Storage.CurrentContext, Prefix_NumberStorage);
+            //return contractStorage.Get(Tx.Sender);
+            return Storage.Get(Storage.CurrentContext, PreData);
         }
 
         [DisplayName("_deploy")]
@@ -104,6 +107,21 @@ namespace StoreExample
             }
 
             ContractManagement.Update(nefFile, manifest, null);
+        }
+
+        public static void CreateRequest(string url, string filter, string callback, byte[] userData, long gasForResponse)
+        {
+            Oracle.Request(url, filter, callback, userData, gasForResponse);
+        }
+
+        public static void Callback(string url, byte[] userData, int code, byte[] result)
+        {
+            Storage.Put(Storage.CurrentContext, PreData, result.ToByteString());
+        }
+
+        public static void GetDataFromExternalAPI() 
+        {
+            CreateRequest("http://localhost:3000", string.Empty, "Callback", new Byte[8], Oracle.MinimumResponseFee);
         }
     }
 }

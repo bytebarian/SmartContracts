@@ -2,9 +2,5 @@
   {
     "contract": "Mariusz.ContractCallContract",
     "operation": "callAnotherContract"
-  },
-  {
-    "contract": "Mariusz.ContractCallContract",
-    "operation": "GetDataFromExternalAPI"
   }
 ]
